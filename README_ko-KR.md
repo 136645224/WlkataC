@@ -2,29 +2,29 @@
 
 # WlkataC
 
-#### wlkataC version 0.0.1
+#### wlkataC 버전 0.0.1
 
-#### License: MIT
+#### 라이선스: MIT
 
-## IMPORTANT!!!
+## 중요!!!
 
-**&nbsp;&nbsp;&nbsp;&nbsp;This is a package that uses C++ to control Mirobot robotic arms, E4 robotic arms, MT4 robotic arms, sliders, conveyor belts, and other products. This package mainly communicates through serial and G-code protocols. Currently, it supports RS485 or UART communication. It should be noted that a multifunctional controller is required when using this software package, as some functions of the modified software package use a multifunctional controller. If the robotic arm is directly connected, some functions may be ineffective.**
+**&nbsp;&nbsp;&nbsp;&nbsp;이 패키지는 C++를 사용하여 Mirobot 로봇 팔, E4 로봇 팔, MT4 로봇 팔, 슬라이더, 컨베이어 벨트 및 기타 제품을 제어하는 패키지입니다. 이 패키지는 주로 시리얼 및 G 코드 프로토콜을 통해 통신합니다. 현재 RS485 또는 UART 통신을 지원합니다. 이 소프트웨어 패키지를 사용할 때는 다기능 컨트롤러가 필요합니다. 수정된 소프트웨어 패키지의 일부 기능은 다기능 컨트롤러를 사용하기 때문입니다. 로봇 팔을 직접 연결할 경우 일부 기능이 작동하지 않을 수 있습니다.**
 
-## Description
+## 설명
 
-**&nbsp;&nbsp;&nbsp;&nbsp;WlkataC is a C++package used to control Mirobot robotic arms, E4 robotic arms, MT4 robotic arms, slides, conveyors, and other products.**
+**&nbsp;&nbsp;&nbsp;&nbsp;WlkataC는 Mirobot 로봇 팔, E4 로봇 팔, MT4 로봇 팔, 슬라이드, 컨베이어 및 기타 제품을 제어하는 C++ 패키지입니다.**
 
-**&nbsp;&nbsp;&nbsp;&nbsp;This component uses the G code protocol to communicate with the Mirobot over a serial connection.**
+**&nbsp;&nbsp;&nbsp;&nbsp;이 구성 요소는 시리얼 연결을 통해 Mirobot과 통신하기 위해 G 코드 프로토콜을 사용합니다.**
 
-**&nbsp;&nbsp;&nbsp;&nbsp; The official G code instruction set and driver download can be found at the [WLkata Download Page](https://www.wlkata.com/pages/download-center).**
+**&nbsp;&nbsp;&nbsp;&nbsp;공식 G 코드 명령 세트 및 드라이버 다운로드는 [WLkata 다운로드 페이지](https://www.wlkata.com/pages/download-center)에서 찾을 수 있습니다.**
 
-## Mirobot Wiring diagram(RS485)
+## Mirobot 배선도(RS485)
 
 <div style="text-align: center;">
   <img src="./img/img1.png" style="width: 50%;">
 </div>
 
-## Mirobot Example Usage(RS485)
+## Mirobot 예제 사용법(RS485)
 
 ```C++
 #include <iostream>
@@ -79,14 +79,14 @@ int main() {
 }
 ```
 
-## Mirobot Wiring diagram(UART)
+## Mirobot 배선도(UART)
 
 <div style="text-align: center;">
   <img src="./img/img2.png" style="width: 30%;">
   <img src="./img/img3.png" style="width: 50%;">
 </div>
 
-## Mirobot Example Usage(UART)
+## Mirobot 예제 사용법(UART)
 
 ```C++
 #include <iostream>
@@ -126,16 +126,15 @@ int main() {
     // system("pause");
     return 0;
 }
-
 ```
 
-## MT4 Wiring diagram(RS485)
+## MT4 배선도(RS485)
 
 <div style="text-align: center;">
   <img src="./img/MT4_RS485.png" style="width: 50%;">
 </div>
 
-## MT4 Example Usage(RS485)
+## MT4 예제 사용법(RS485)
 
 ```C++
 #include <iostream>
@@ -177,16 +176,15 @@ int main() {
     // system("pause");
     return 0;
 }
-
 ```
 
-## MT4 Wiring diagram(UART)
+## MT4 배선도(UART)
 
 <div style="text-align: center;">
   <img src="./img/MT4_UART.png" style="width: 50%;">
 </div>
 
-## MT4 Example Usage(UART)
+## MT4 예제 사용법(UART)
 
 ```C++
 #include <iostream>
@@ -228,13 +226,13 @@ int main() {
 }
 ```
 
-## MS4220 Wiring diagram(RS485)
+## MS4220 배선도(RS485)
 
 <div style="text-align: center;">
   <img src="./img/MS4220.png" style="width: 50%;">
 </div>
 
-## MS4220 Example Usage(RS485)
+## MS4220 예제 사용법(RS485)
 
 ```C++
 #include <iostream>
@@ -262,6 +260,6 @@ int main() {
 }
 ```
 
-## Communication Methods
+## 통신 방법
 
-**&nbsp;&nbsp;&nbsp;&nbsp;Please contact wlkata personnel for further instructions [WLkata Download Page](https://www.wlkata.com/pages/download-center).**
+**&nbsp;&nbsp;&nbsp;&nbsp;추가 지침은 [WLkata 다운로드 페이지](https://www.wlkata.com/pages/download-center)에서 Wlkata 담당자에게 문의하십시오.**

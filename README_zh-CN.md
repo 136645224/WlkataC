@@ -2,29 +2,29 @@
 
 # WlkataC
 
-#### wlkataC version 0.0.1
+#### wlkataC 版本 0.0.1
 
-#### License: MIT
+#### 许可证: MIT
 
-## IMPORTANT!!!
+## 重要提示!!!
 
-**&nbsp;&nbsp;&nbsp;&nbsp;This is a package that uses C++ to control Mirobot robotic arms, E4 robotic arms, MT4 robotic arms, sliders, conveyor belts, and other products. This package mainly communicates through serial and G-code protocols. Currently, it supports RS485 or UART communication. It should be noted that a multifunctional controller is required when using this software package, as some functions of the modified software package use a multifunctional controller. If the robotic arm is directly connected, some functions may be ineffective.**
+**&nbsp;&nbsp;&nbsp;&nbsp;这是一个使用 C++ 控制 Mirobot 机械臂、E4 机械臂、MT4 机械臂、滑块、传送带及其他产品的软件包。该软件包主要通过串口和 G 代码协议进行通信。目前支持 RS485 或 UART 通信。需要注意的是，使用此软件包时需要一个多功能控制器，因为修改后的软件包中的某些功能需要使用多功能控制器。如果直接连接机械臂，某些功能可能无效。**
 
-## Description
+## 描述
 
-**&nbsp;&nbsp;&nbsp;&nbsp;WlkataC is a C++package used to control Mirobot robotic arms, E4 robotic arms, MT4 robotic arms, slides, conveyors, and other products.**
+**&nbsp;&nbsp;&nbsp;&nbsp;WlkataC 是一个用于控制 Mirobot 机械臂、E4 机械臂、MT4 机械臂、滑块、传送带及其他产品的 C++ 软件包。**
 
-**&nbsp;&nbsp;&nbsp;&nbsp;This component uses the G code protocol to communicate with the Mirobot over a serial connection.**
+**&nbsp;&nbsp;&nbsp;&nbsp;该组件使用 G 代码协议通过串口与 Mirobot 进行通信。**
 
-**&nbsp;&nbsp;&nbsp;&nbsp; The official G code instruction set and driver download can be found at the [WLkata Download Page](https://www.wlkata.com/pages/download-center).**
+**&nbsp;&nbsp;&nbsp;&nbsp;官方 G 代码指令集和驱动程序下载可以在 [WLkata 下载页面](https://cn.wlkata.com/cn_downloads_wlkata.php) 找到。**
 
-## Mirobot Wiring diagram(RS485)
+## Mirobot 接线图 (RS485)
 
 <div style="text-align: center;">
   <img src="./img/img1.png" style="width: 50%;">
 </div>
 
-## Mirobot Example Usage(RS485)
+## Mirobot 示例用法 (RS485)
 
 ```C++
 #include <iostream>
@@ -55,21 +55,21 @@ int main() {
     std::this_thread::sleep_for(std::chrono::milliseconds(2000));
     Mirobot.homing();
     Mirobot_2.homing();
-    waitForIdle(Mirobot, "Homing...");
-    waitForIdle(Mirobot_2, "Homing...");
+    waitForIdle(Mirobot, "归位中...");
+    waitForIdle(Mirobot_2, "归位中...");
 
     for (int i = 0; i < 5; i++) {
         Mirobot.writecoordinate(0, 0, 255, 0, 200, 0, 0, 0);
-        waitForIdle(Mirobot, "Waiting for run1...");
-   
+        waitForIdle(Mirobot, "等待运行1...");
+     
         Mirobot.writecoordinate(0, 0, 255, 0, 100, 0, 0, 0);
-        waitForIdle(Mirobot, "Waiting for run2...");
+        waitForIdle(Mirobot, "等待运行2...");
 
         Mirobot_2.writecoordinate(0, 0, 255, 0, 200, 0, 0, 0);
-        waitForIdle(Mirobot_2, "Waiting for run3...");
+        waitForIdle(Mirobot_2, "等待运行3...");
 
         Mirobot_2.writecoordinate(0, 0, 255, 0, 100, 0, 0, 0);
-        waitForIdle(Mirobot_2, "Waiting for run4...");
+        waitForIdle(Mirobot_2, "等待运行4...");
    
     }
 
@@ -79,14 +79,14 @@ int main() {
 }
 ```
 
-## Mirobot Wiring diagram(UART)
+## Mirobot 接线图 (UART)
 
 <div style="text-align: center;">
   <img src="./img/img2.png" style="width: 30%;">
   <img src="./img/img3.png" style="width: 50%;">
 </div>
 
-## Mirobot Example Usage(UART)
+## Mirobot 示例用法 (UART)
 
 ```C++
 #include <iostream>
@@ -112,30 +112,29 @@ int main() {
     Mirobot.restart();
     std::this_thread::sleep_for(std::chrono::milliseconds(2000));
     Mirobot.homing();
-    waitForIdle(Mirobot, "Homing...");
+    waitForIdle(Mirobot, "归位中...");
 
     for (int i = 0; i < 5; i++) {
         Mirobot.writecoordinate(0, 0, 255, 0, 200, 0, 0, 0);
-        waitForIdle(Mirobot, "Waiting for run1...");
+        waitForIdle(Mirobot, "等待运行1...");
 
         Mirobot.writecoordinate(0, 0, 255, 0, 100, 0, 0, 0);
-        waitForIdle(Mirobot, "Waiting for run2...");
+        waitForIdle(Mirobot, "等待运行2...");
     }
 
     my_serial.close();
     // system("pause");
     return 0;
 }
-
 ```
 
-## MT4 Wiring diagram(RS485)
+## MT4 接线图 (RS485)
 
 <div style="text-align: center;">
   <img src="./img/MT4_RS485.png" style="width: 50%;">
 </div>
 
-## MT4 Example Usage(RS485)
+## MT4 示例用法 (RS485)
 
 ```C++
 #include <iostream>
@@ -161,15 +160,15 @@ int main() {
     MT4_1.restart();
     std::this_thread::sleep_for(std::chrono::milliseconds(2000));
     MT4_1.homing();
-    waitForIdle(MT4_1, "Homing...");
+    waitForIdle(MT4_1, "归位中...");
 
     for (int i = 0; i < 5; i++) {
 
         MT4_1.writecoordinate(0, 0, 255, 0, 200, 0);
-        waitForIdle(MT4_1, "Waiting for run1...");
+        waitForIdle(MT4_1, "等待运行1...");
 
         MT4_1.writecoordinate(0, 0, 255, 0, 100, 0);
-        waitForIdle(MT4_1, "Waiting for run2...");
+        waitForIdle(MT4_1, "等待运行2...");
 
     }
 
@@ -177,16 +176,15 @@ int main() {
     // system("pause");
     return 0;
 }
-
 ```
 
-## MT4 Wiring diagram(UART)
+## MT4 接线图 (UART)
 
 <div style="text-align: center;">
   <img src="./img/MT4_UART.png" style="width: 50%;">
 </div>
 
-## MT4 Example Usage(UART)
+## MT4 示例用法 (UART)
 
 ```C++
 #include <iostream>
@@ -212,14 +210,14 @@ int main() {
     MT4_1.restart();
     std::this_thread::sleep_for(std::chrono::milliseconds(2000));
     MT4_1.homing();
-    waitForIdle(MT4_1, "Homing...");
+    waitForIdle(MT4_1, "归位中...");
 
     for (int i = 0; i < 5; i++) {
         MT4_1.writecoordinate(0, 0, 255, 0, 200, 0);
-        waitForIdle(MT4_1, "Waiting for run1...");
+        waitForIdle(MT4_1, "等待运行1...");
 
         MT4_1.writecoordinate(0, 0, 255, 0, 100, 0);
-        waitForIdle(MT4_1, "Waiting for run2...");
+        waitForIdle(MT4_1, "等待运行2...");
     }
 
     my_serial.close();
@@ -228,13 +226,13 @@ int main() {
 }
 ```
 
-## MS4220 Wiring diagram(RS485)
+## MS4220 接线图 (RS485)
 
 <div style="text-align: center;">
   <img src="./img/MS4220.png" style="width: 50%;">
 </div>
 
-## MS4220 Example Usage(RS485)
+## MS4220 示例用法 (RS485)
 
 ```C++
 #include <iostream>
@@ -245,7 +243,6 @@ int main() {
 
 int main() {
     serial::Serial my_serial("com13", 115200);
-
     MS4220_UART MS4220_1;
     MS4220_1.init(&my_serial, -1);
     for (int i = 0; i < 5; i++) {
@@ -262,6 +259,6 @@ int main() {
 }
 ```
 
-## Communication Methods
+## 联系方式
 
-**&nbsp;&nbsp;&nbsp;&nbsp;Please contact wlkata personnel for further instructions [WLkata Download Page](https://www.wlkata.com/pages/download-center).**
+**&nbsp;&nbsp;&nbsp;&nbsp;请联系 WLkata 人员获取进一步说明 [WLkata 下载页面](https://cn.wlkata.com/index.php?pageid=137631)。**
