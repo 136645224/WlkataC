@@ -31,7 +31,7 @@ int main() {
         waitForIdle(Mirobot, "Waiting for run2...");
     }
 
-    my_serial.close();
+    my_serial.close(); 
     system("pause");
     return 0;
 }
