@@ -167,11 +167,11 @@ int main() {
     waitForIdle(MT4_1, "Homing...");
 
     for (int i = 0; i < 5; i++) {
-        
-        MT4_1.writecoordinate(0, 0, 255, 0, 200, 0, 0, 0);
+
+        MT4_1.writecoordinate(0, 0, 255, 0, 200, 0);
         waitForIdle(MT4_1, "Waiting for run1...");
 
-        MT4_1.writecoordinate(0, 0, 255, 0, 100, 0, 0, 0);
+        MT4_1.writecoordinate(0, 0, 255, 0, 100, 0);
         waitForIdle(MT4_1, "Waiting for run2...");
 
     }
@@ -219,10 +219,10 @@ int main() {
     waitForIdle(MT4_1, "Homing...");
 
     for (int i = 0; i < 5; i++) {
-        MT4_1.writecoordinate(0, 0, 255, 0, 200, 0, 0, 0);
+        MT4_1.writecoordinate(0, 0, 255, 0, 200, 0);
         waitForIdle(MT4_1, "Waiting for run1...");
 
-        MT4_1.writecoordinate(0, 0, 255, 0, 100, 0, 0, 0);
+        MT4_1.writecoordinate(0, 0, 255, 0, 100, 0);
         waitForIdle(MT4_1, "Waiting for run2...");
     }
 
