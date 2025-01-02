@@ -1,0 +1,3 @@
+D:/DS/WlkataC++/0.0.1/WlkataC/build/CMakeFiles/wlkata.dir
+D:/DS/WlkataC++/0.0.1/WlkataC/build/CMakeFiles/edit_cache.dir
+D:/DS/WlkataC++/0.0.1/WlkataC/build/CMakeFiles/rebuild_cache.dir

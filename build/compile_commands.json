@@ -1,0 +1,74 @@
+[
+{
+  "directory": "D:/DS/WlkataC++/0.0.1/WlkataC/build",
+  "command": "D:/w64devkit/bin/g++.exe  @CMakeFiles/wlkata.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles/wlkata.dir/main.cpp.obj -c D:/DS/WlkataC++/0.0.1/WlkataC/main.cpp",
+  "file": "D:/DS/WlkataC++/0.0.1/WlkataC/main.cpp",
+  "output": "CMakeFiles/wlkata.dir/main.cpp.obj"
+},
+{
+  "directory": "D:/DS/WlkataC++/0.0.1/WlkataC/build",
+  "command": "D:/w64devkit/bin/g++.exe  @CMakeFiles/wlkata.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles/wlkata.dir/wlkata/src/E4_UART.cc.obj -c D:/DS/WlkataC++/0.0.1/WlkataC/wlkata/src/E4_UART.cc",
+  "file": "D:/DS/WlkataC++/0.0.1/WlkataC/wlkata/src/E4_UART.cc",
+  "output": "CMakeFiles/wlkata.dir/wlkata/src/E4_UART.cc.obj"
+},
+{
+  "directory": "D:/DS/WlkataC++/0.0.1/WlkataC/build",
+  "command": "D:/w64devkit/bin/g++.exe  @CMakeFiles/wlkata.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles/wlkata.dir/wlkata/src/MS4220_UART.cc.obj -c D:/DS/WlkataC++/0.0.1/WlkataC/wlkata/src/MS4220_UART.cc",
+  "file": "D:/DS/WlkataC++/0.0.1/WlkataC/wlkata/src/MS4220_UART.cc",
+  "output": "CMakeFiles/wlkata.dir/wlkata/src/MS4220_UART.cc.obj"
+},
+{
+  "directory": "D:/DS/WlkataC++/0.0.1/WlkataC/build",
+  "command": "D:/w64devkit/bin/g++.exe  @CMakeFiles/wlkata.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles/wlkata.dir/wlkata/src/MT4_UART.cc.obj -c D:/DS/WlkataC++/0.0.1/WlkataC/wlkata/src/MT4_UART.cc",
+  "file": "D:/DS/WlkataC++/0.0.1/WlkataC/wlkata/src/MT4_UART.cc",
+  "output": "CMakeFiles/wlkata.dir/wlkata/src/MT4_UART.cc.obj"
+},
+{
+  "directory": "D:/DS/WlkataC++/0.0.1/WlkataC/build",
+  "command": "D:/w64devkit/bin/g++.exe  @CMakeFiles/wlkata.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles/wlkata.dir/wlkata/src/Mirobot_UART.cc.obj -c D:/DS/WlkataC++/0.0.1/WlkataC/wlkata/src/Mirobot_UART.cc",
+  "file": "D:/DS/WlkataC++/0.0.1/WlkataC/wlkata/src/Mirobot_UART.cc",
+  "output": "CMakeFiles/wlkata.dir/wlkata/src/Mirobot_UART.cc.obj"
+},
+{
+  "directory": "D:/DS/WlkataC++/0.0.1/WlkataC/build",
+  "command": "D:/w64devkit/bin/g++.exe  @CMakeFiles/wlkata.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles/wlkata.dir/wlkata/src/wlkataC.cc.obj -c D:/DS/WlkataC++/0.0.1/WlkataC/wlkata/src/wlkataC.cc",
+  "file": "D:/DS/WlkataC++/0.0.1/WlkataC/wlkata/src/wlkataC.cc",
+  "output": "CMakeFiles/wlkata.dir/wlkata/src/wlkataC.cc.obj"
+},
+{
+  "directory": "D:/DS/WlkataC++/0.0.1/WlkataC/build",
+  "command": "D:/w64devkit/bin/g++.exe  @CMakeFiles/wlkata.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles/wlkata.dir/serial/src/impl/list_ports/list_ports_linux.cc.obj -c D:/DS/WlkataC++/0.0.1/WlkataC/serial/src/impl/list_ports/list_ports_linux.cc",
+  "file": "D:/DS/WlkataC++/0.0.1/WlkataC/serial/src/impl/list_ports/list_ports_linux.cc",
+  "output": "CMakeFiles/wlkata.dir/serial/src/impl/list_ports/list_ports_linux.cc.obj"
+},
+{
+  "directory": "D:/DS/WlkataC++/0.0.1/WlkataC/build",
+  "command": "D:/w64devkit/bin/g++.exe  @CMakeFiles/wlkata.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles/wlkata.dir/serial/src/impl/list_ports/list_ports_osx.cc.obj -c D:/DS/WlkataC++/0.0.1/WlkataC/serial/src/impl/list_ports/list_ports_osx.cc",
+  "file": "D:/DS/WlkataC++/0.0.1/WlkataC/serial/src/impl/list_ports/list_ports_osx.cc",
+  "output": "CMakeFiles/wlkata.dir/serial/src/impl/list_ports/list_ports_osx.cc.obj"
+},
+{
+  "directory": "D:/DS/WlkataC++/0.0.1/WlkataC/build",
+  "command": "D:/w64devkit/bin/g++.exe  @CMakeFiles/wlkata.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles/wlkata.dir/serial/src/impl/list_ports/list_ports_win.cc.obj -c D:/DS/WlkataC++/0.0.1/WlkataC/serial/src/impl/list_ports/list_ports_win.cc",
+  "file": "D:/DS/WlkataC++/0.0.1/WlkataC/serial/src/impl/list_ports/list_ports_win.cc",
+  "output": "CMakeFiles/wlkata.dir/serial/src/impl/list_ports/list_ports_win.cc.obj"
+},
+{
+  "directory": "D:/DS/WlkataC++/0.0.1/WlkataC/build",
+  "command": "D:/w64devkit/bin/g++.exe  @CMakeFiles/wlkata.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles/wlkata.dir/serial/src/impl/unix.cc.obj -c D:/DS/WlkataC++/0.0.1/WlkataC/serial/src/impl/unix.cc",
+  "file": "D:/DS/WlkataC++/0.0.1/WlkataC/serial/src/impl/unix.cc",
+  "output": "CMakeFiles/wlkata.dir/serial/src/impl/unix.cc.obj"
+},
+{
+  "directory": "D:/DS/WlkataC++/0.0.1/WlkataC/build",
+  "command": "D:/w64devkit/bin/g++.exe  @CMakeFiles/wlkata.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles/wlkata.dir/serial/src/impl/win.cc.obj -c D:/DS/WlkataC++/0.0.1/WlkataC/serial/src/impl/win.cc",
+  "file": "D:/DS/WlkataC++/0.0.1/WlkataC/serial/src/impl/win.cc",
+  "output": "CMakeFiles/wlkata.dir/serial/src/impl/win.cc.obj"
+},
+{
+  "directory": "D:/DS/WlkataC++/0.0.1/WlkataC/build",
+  "command": "D:/w64devkit/bin/g++.exe  @CMakeFiles/wlkata.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles/wlkata.dir/serial/src/serial.cc.obj -c D:/DS/WlkataC++/0.0.1/WlkataC/serial/src/serial.cc",
+  "file": "D:/DS/WlkataC++/0.0.1/WlkataC/serial/src/serial.cc",
+  "output": "CMakeFiles/wlkata.dir/serial/src/serial.cc.obj"
+}
+]
